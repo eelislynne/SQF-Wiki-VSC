@@ -6,9 +6,6 @@ SQF-Wiki is an extension that allows users to easily look up commands on the BI 
 
 Just highlight the command you'd like to lookup and right click or press the hotkey ctrl+shift+q
 
-
------------------------------------------------------------------------------------------------------------
-
 ## Works with SQF Language
 
 **Have fun!**
