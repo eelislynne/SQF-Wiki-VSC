@@ -2,7 +2,7 @@
     "name": "sqf-wiki",
     "displayName": "SQF Wiki",
     "description": "Want to look up some SQF functions? Now you can, with just a single click!",
-    "version": "0.0.2",
+    "version": "1.0.0",
     "publisher": "EelisLynne",
     "repository": {
         "type": "git",
@@ -26,29 +26,32 @@
             }
         ],
         "menus": {
-            "editor/context": [{
-                "command": "extension.showWiki",
-                "group": "1_modification",
-                "when": "editorLangId == sqf"
-            }]
+            "editor/context": [
+                {
+                    "command": "extension.showWiki",
+                    "group": "1_modification",
+                    "when": "editorLangId == sqf"
+                }
+            ]
         },
-        "keybindings": [{
-            "command": "extension.showWiki",
-            "key": "ctrl+shift+q",
-            "mac": "cmd+shift+q",
-            "when": "editorLangId == sqf"
-        }]
+        "keybindings": [
+            {
+                "command": "extension.showWiki",
+                "key": "ctrl+shift+q",
+                "mac": "cmd+shift+q",
+                "when": "editorLangId == sqf"
+            }
+        ]
     },
-    
     "scripts": {
         "postinstall": "node ./node_modules/vscode/bin/install",
         "test": "node ./node_modules/vscode/bin/test"
     },
     "devDependencies": {
-        "typescript": "^2.6.1",
-        "vscode": "^1.1.6",
-        "eslint": "^4.11.0",
-        "@types/node": "^7.0.43",
-        "@types/mocha": "^2.2.42"
+        "@types/mocha": "^2.2.42",
+        "@types/node": "^7.10.11",
+        "eslint": "^4.19.1",
+        "typescript": "^2.9.2",
+        "vscode": "^1.1.37"
     }
 }
